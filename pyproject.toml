@@ -1,0 +1,19 @@
+[project]
+name = "test-master-pro-backend"
+version = "0.1.0"
+description = "FastAPI backend for test-master-pro"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi>=0.115.0",
+    "uvicorn>=0.30.0",
+    "openai>=2.7.1",
+    "python-dotenv>=1.2.1",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
